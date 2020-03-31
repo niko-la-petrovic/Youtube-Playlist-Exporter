@@ -2,7 +2,7 @@
 
   "publicPlaylistIds": [ "playlistId1", "playlistId2" ],
   "apiKey": "GoogleAPIKey",
-  "maxAPICalls":  100,
+  "maximumAPICalls": 100,
   "exporters": [
     {
       "type": "playlist",

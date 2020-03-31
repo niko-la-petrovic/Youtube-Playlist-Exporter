@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <None Update="YoutubeExporterSettings.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
