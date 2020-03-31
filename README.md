@@ -42,7 +42,7 @@ I use Youtube for keeping a list of favorite songs, which occasionally get delet
 
 The Program.cs shows a simple way of instancing the YoutubeExporter class and its use.
 
-You can see my implementation of the DefaultPlaylistExporter and DefaultItemExporter classes to get an idea, or you can just implement one of the interfaces (IExporter, IItemExporter or IPlaylistExporter). You can add an instance of your interface to the PlaylistExporters or ItemExporters properties of the YoutubeExporter class, depending on your chosen interface. 
+You can see my implementation of the DefaultPlaylistExporter and DefaultItemExporter classes to get an idea, or you can just implement one of the interfaces (IExporter, IItemExporter or IPlaylistExporter). You can add an instance of your interface to the PlaylistExporters or ItemExporters properties of the YoutubeExporterSettings class, depending on your chosen interface. 
 
 
 If you would like to use the existing way to inject settings into your interface from the **YoutubeExporterSettings.json** file, you can add your own exporter with its properties to the exporters array in the settings file.
