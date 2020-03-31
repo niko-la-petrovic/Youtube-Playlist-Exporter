@@ -1,7 +1,5 @@
 # Youtube-Playlist-Exporter
 A cross-platform .NET Core solution for exporting (currently only public) playlists from Youtube.
-# Youtube-Playlist-Exporter
-A cross-platform .NET Core solution for exporting (currently only public) playlists from Youtube.
 
 ---
 
