@@ -1,0 +1,44 @@
+{
+
+  "publicPlaylistIds": [ "playlistId1", "playlistId2" ],
+  "apiKey": "GoogleAPIKey",
+  "maxAPICalls":  100,
+  "exporters": [
+    {
+      "type": "playlist",
+      "defaultImplementation": "true",
+      "name": "Exporter Full",
+      "folderName": "Export",
+      "sortDescending": "true",
+      "overwriteExisting": "false"
+    },
+    {
+      "type": "item",
+      "defaultImplementation": "true",
+      "name": "Exporter Minimal",
+      "individualItemFormat": "{i}. {title}",
+      "folderName": "Export_Minimal",
+      "sortDescending": "true",
+      "overwriteExisting": "false"
+    },
+    {
+      "type": "item",
+      "defaultImplementation": "true",
+      "name": "Exporter Regular",
+      "individualItemFormat": "{i}. {title} {videourl} {dateaddedtoplaylist} {dateaddedtofile}",
+      "folderName": "Export_Regular",
+      "sortDescending": "true",
+      "overwriteExisting": "false"
+    },
+    {
+      "type": "item",
+      "defaultImplementation": "true",
+      "name": "Exporter Csv",
+      "fileName": "export.csv",
+      "individualItemFormat": "\"{i}\", \"{title}\", \"{videourl}\", \"{dateaddedtoplaylist}\", \"{dateaddedtofile}\"",
+      "folderName": "Export_Regular",
+      "sortDescending": "true",
+      "overwriteExisting": "false"
+    }
+  ]
+}
