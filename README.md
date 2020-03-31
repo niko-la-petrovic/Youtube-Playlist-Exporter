@@ -7,6 +7,7 @@ A cross-platform .NET Core solution for exporting (currently only public) playli
 - The current implementation works by accessing Youtube's API. Therefore **you must create your own API key** at the Google Developers Console. You can follow [this](https://developers.google.com/youtube/v3/getting-started) article if you are not familiar with it.
 - I will work on making the documentation more complete.
 - Only Windows binaries are avaliable as of now.
+- I plan on making it usable through the command line as well.
 - I plan on making this into a NuGet package.
 
 # How to use as is
