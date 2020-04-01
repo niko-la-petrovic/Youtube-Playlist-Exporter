@@ -3,7 +3,7 @@ A cross-platform .NET Core solution for exporting (currently only public) playli
 
 # Latest Notes
 - The program/code can be used to export data about playlists or playlist videos obtained from Youtube's v3 API.
-- The current implementation can export **only public playlists.** This is a feature to add. 
+- The current implementation can export **only public playlists.** Exporting private playlists is a feature to add. 
 - The current implementation works by accessing Youtube's API. Therefore **you must create your own API key** at the Google Developers Console. You can follow [this](https://developers.google.com/youtube/v3/getting-started) article if you are not familiar with it.
 - I will work on making the documentation more complete.
 - Only Windows binaries are avaliable as of now.
@@ -48,4 +48,4 @@ You can see my implementation of the DefaultPlaylistExporter and DefaultItemExpo
 
 If you would like to use the existing way to inject settings into your interface from the **YoutubeExporterSettings.json** file, you can add your own exporter with its properties to the exporters array in the settings file.
 
-Currently, unless the property exporter property `defaultImplementation` is not set to true, that exporter will not be instanced, and you have to replace the existing instance with your own after you obtain the settings from it, but I will find a way to get around this with abstractions.
+Currently, unless the exporter property `defaultImplementation` is not set to true, that exporter will not be instanced, and you have to replace the existing instance with your own after you obtain the settings from it, but I will find a way to get around this with abstractions.
