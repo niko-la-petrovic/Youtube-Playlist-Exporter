@@ -39,7 +39,7 @@ To build the project yourself, you require the one of the .NET Core runtimes.
 I use Youtube for keeping a list of favorite songs, which occasionally get deleted for various reasons and it upsets me to lose a song. Therefore, you can use this to keep a persistent record of your favorite songs.
 
 
-# Using the code:
+# Using the code
 
 The Program.cs shows a simple way of instancing the YoutubeExporter class and its use.
 
