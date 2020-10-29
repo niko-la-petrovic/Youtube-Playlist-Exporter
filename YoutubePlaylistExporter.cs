@@ -72,6 +72,7 @@ namespace YoutubePlaylistExporter
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine($"Exception while exporting playlist with id {playlistId}.");
                     Console.WriteLine(ex.ToString());
                 }
             }
