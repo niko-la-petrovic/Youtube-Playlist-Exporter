@@ -31,7 +31,7 @@ namespace YoutubePlaylistExporter
             {
                 playlistsNamesAndIds = GetPlaylistsWithNames(YoutubePlaylistExporterSettings.PublicPlaylistIds);
             }
-            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
 
             foreach (string playlistId in YoutubePlaylistExporterSettings.PublicPlaylistIds)
             {
@@ -42,7 +42,7 @@ namespace YoutubePlaylistExporter
                     {
                         currentPlaylist.Name = playlistsNamesAndIds.First(p => p.Id == currentPlaylist.Id).Name;
                     }
-                    catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+                    catch (Exception ex) { Console.WriteLine(ex.Message); }
 
                     foreach (IPlaylistExporter playlistExporter in YoutubePlaylistExporterSettings.PlaylistExporters)
                     {
@@ -53,7 +53,7 @@ namespace YoutubePlaylistExporter
                         catch (Exception ex)
                         {
                             Console.WriteLine("Encountered exception with an item exporter.");
-                            Console.WriteLine($"{playlistExporter.Name}: {ex.ToString()}");
+                            Console.WriteLine($"{playlistExporter.Name}: {ex.Message}");
                         }
                     }
                     foreach (IItemExporter itemExporter in YoutubePlaylistExporterSettings.ItemExporters)
@@ -65,7 +65,7 @@ namespace YoutubePlaylistExporter
                         catch (Exception ex)
                         {
                             Console.WriteLine("Encountered exception with an item exporter.");
-                            Console.WriteLine($"{itemExporter.Name}: {ex.ToString()}");
+                            Console.WriteLine($"{itemExporter.Name}: {ex.Message}");
                         }
                     }
 
@@ -73,7 +73,7 @@ namespace YoutubePlaylistExporter
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Exception while exporting playlist with id {playlistId}.");
-                    Console.WriteLine(ex.ToString());
+                    Console.WriteLine(ex.Message);
                 }
             }
         }

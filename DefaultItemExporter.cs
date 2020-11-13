@@ -49,7 +49,7 @@ namespace YoutubePlaylistExporter
                         DateTimeOffset.Now.ToUnixTimeSeconds() + Path.GetExtension(FileName));
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
 
         /// <summary>

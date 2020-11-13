@@ -73,7 +73,7 @@ namespace YoutubePlaylistExporter
 
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
             return playlist;
         }
 

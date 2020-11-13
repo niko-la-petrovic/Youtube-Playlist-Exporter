@@ -74,16 +74,16 @@ namespace YoutubePlaylistExporter
             catch (JsonException ex)
             {
                 Console.WriteLine("Please check your settings in 'YoutubeExporterSettings.json'. A formatting error was encountered.");
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message);
             }
             catch (ArgumentNullException ex)
             {
                 Console.WriteLine("Could not successfully read 'YoutubeExporterSettings.json'. Check that the file exists.");
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message);
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message);
             }
             return new YoutubePlaylistExporterSettings();
         }
