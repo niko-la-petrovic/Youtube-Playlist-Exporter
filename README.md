@@ -30,7 +30,7 @@ A complete explanation of all the modifiable options is to be written.
 *The changes in the settings are reflected when the program is re-run.
 ### Building
 
-To build the project yourself, you require the one of the .NET Core runtimes.
+To build the project yourself, you require one of the .NET Core runtimes.
 
 ---
 
